@@ -1,7 +1,8 @@
 pyvenny
 =======
 
-Plot four set venn diagrams, like venny.
+Plot four set venn diagrams, like venny (http://bioinfogp.cnb.csic.es/tools/venny/)
+but using python sets:
 
-Like this but using python sets:
-http://bioinfogp.cnb.csic.es/tools/venny/
+I just drew the damn thing using inkscape and then used that as a jinja template.
+Set algebra I just did by hand.
