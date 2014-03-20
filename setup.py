@@ -1,8 +1,13 @@
 from setuptools import setup
 
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
 setup(name='pyvenny',
       version='0.1',
       description='Venn diagram plot of four sets, like venny.',
+      long_description=readme(),
       # classifiers=[
       #   'Development Status :: 0 - Alpha',
       #   'License :: OSI Approved :: GPLv3',
