@@ -1,2 +1,2 @@
 include README.rst
-include templates/four_set_venn.svg
+include pyvenny/templates/four_set_venn.svg
