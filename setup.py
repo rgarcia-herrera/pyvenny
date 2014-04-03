@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='pyvenny',
-      version='0.1',
+      version='v0.1-alpha',
       description='Venn diagram plot of four sets, like venny.',
       long_description=readme(),
       classifiers=[
