@@ -20,5 +20,6 @@ setup(name='pyvenny',
       license='GPLv3',
       packages=['pyvenny'],
       install_requires=[ 'Jinja2' ],
+      scripts=['bin/vennyplot'],
       include_package_data=True,
       zip_safe=False)
