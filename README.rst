@@ -12,7 +12,7 @@ Install library, perhaps within a virtualenv::
     $ pip install pyvenny
 
 
-Command line interface
+Command Line Interface
 ----------------------
 
 A command line script is included, vennyplot::
