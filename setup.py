@@ -5,11 +5,11 @@ def readme():
         return f.read()
 
 setup(name='pyvenny',
-      version='v0.1-alpha',
+      version='0.2rc',
       description='Venn diagram plot of four sets, like venny.',
       long_description=readme(),
       classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 2.7',
         'Topic :: Scientific/Engineering :: Visualization',
