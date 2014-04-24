@@ -1,2 +1,3 @@
 include README.rst
 include pyvenny/templates/four_set_venn.svg
+include bin/*
