@@ -1,0 +1,44 @@
+<tool id="vennyplot" name="Venn Diagram of four sets" version="0.2rc">
+
+  <description>plot four set venn diagram</description>
+
+  <requirements>
+    <requirement type="python-module">pyvenny</requirement>
+  </requirements>
+
+  <command>
+    vennyplot 
+    --sets $A $B $C $D
+    --labels $labelA $labelB $labelC $labelD
+    --output $output
+  </command>
+
+
+  <inputs>
+    <param name="labelA" type="text" size="50" label="Label"
+           value="A" />
+    <param name="A" type="data" format="tabular"
+           label="set A"/>
+
+    <param name="labelB" type="text" size="50" label="Label"
+           value="B" />
+    <param name="B" type="data" format="tabular"
+           label="set B"/>
+
+    <param name="labelC" type="text" size="50" label="Label"
+           value="C" />
+    <param name="C" type="data" format="tabular"
+           label="set C"/>
+
+    <param name="labelD" type="text" size="50" label="Label"
+           value="D" />
+    <param name="D" type="data" format="tabular"
+           label="set D"/>
+  </inputs>
+
+
+  <outputs>
+    <data format="svg" name="output" />
+  </outputs>
+
+</tool>
