@@ -9,7 +9,7 @@
   <command>
     vennyplot 
     --sets $A $B $C $D
-    --labels $labelA $labelB $labelC $labelD
+    --labels "$labelA" "$labelB" "$labelC" "$labelD"
     --output $output
   </command>
 
