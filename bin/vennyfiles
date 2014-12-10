@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+import argparse
+from pyvenny import fifteen_subsets
+
+parser = argparse.ArgumentParser(description='Will write 15 files, one for each segment in the venn diagram of four sets.')
+parser.add_argument('--sets',   type=argparse.FileType('r'), required=True,  nargs=4, help="absolute paths to four files" )
+
+args = parser.parse_args()
+    
+       
+venn = fifteen_subsets( *[set(f.readlines()) for f in args.sets] )
+
+for s in venn:
+    f = open("%s.txt" % s, 'w')
+    f.writelines(list(venn[s]))
+    f.close()
+                                         

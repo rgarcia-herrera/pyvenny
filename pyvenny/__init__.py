@@ -29,6 +29,33 @@ def fifteen_normalized_sections(a, b, c, d):
              'AiBiCiD': "%0.2f" % (len(set.intersection(a,b,c,d))/union) }
 
 
+
+def fifteen_subsets(a, b, c, d):
+    union = Decimal(len(set.union(a,b,c,d)))
+
+    # get sizes for regions delimited by set areas
+    # _ is for - as in substract, i is for intersection, u is for union
+    return { 'A_BuCuD': a - set.union(b,c,d),
+             'B_AuCuD': b - set.union(a,c,d),
+             'C_AuBuD': c - set.union(a,b,d),
+             'D_AuBuC': d - set.union(a,b,c),
+
+             'AiB_CuD': set.intersection(a,b) - set.union(c,d),
+             'AiC_BuD': set.intersection(a,c) - set.union(b,d),
+             'AiD_BuC': set.intersection(a,d) - set.union(b,c),
+             'BiC_AuD': set.intersection(b,c) - set.union(a,d),
+             'BiD_AuC': set.intersection(b,d) - set.union(a,c),
+             'CiD_AuB': set.intersection(c,d) - set.union(a,b),
+
+             'AiBiC_D': set.intersection(a,b,c) - d,
+             'BiCiD_A': set.intersection(b,c,d) - a,
+             'AiCiD_B': set.intersection(a,c,d) - b,
+             'AiBiD_C': set.intersection(a,b,d) - c,
+
+             'AiBiCiD': set.intersection(a,b,c,d)}
+
+             
+
 def render_four_set_venn( a, b, c, d, titles={'A': 'A',
                                               'B': 'B',
                                               'C': 'C',
