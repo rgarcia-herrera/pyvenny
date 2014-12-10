@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<tool_dependency>
+    <package name="vennyplot" version="1.0">
+      <install version="1.0">
+        <actions>
+          <action type="setup_virtualenv">pyvenny==1.0</action>
+        </actions>
+      </install>
+      <readme>
+        pyvenny plots a four set venn diagram
+      </readme>
+    </package>
+</tool_dependency>

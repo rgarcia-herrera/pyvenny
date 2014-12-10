@@ -3,7 +3,7 @@
   <description>plot four set venn diagram</description>
 
   <requirements>
-    <requirement type="python-module">pyvenny</requirement>
+    <requirement type="python-module" version="1.0">vennyplot</requirement>
   </requirements>
 
   <command>
